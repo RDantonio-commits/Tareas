@@ -1,0 +1,26 @@
+/******************************************************************************
+Codigo 3
+Calculo de la edad en C++
+Fecha 02/08/2026
+*******************************************************************************/
+#include <iostream>
+#include <string> // Necesario para usar variables de texto
+using namespace std;
+int main() {
+    string nombre;
+    int edad;
+    // Solicitar el nombre (acepta nombres con espacios)
+    cout << "Ingresa tu nombre: ";
+    getline(cin, nombre);
+    // Solicitar la edad
+    cout << "Ingresa tu edad: ";
+    cin >> edad;
+
+    // Estructura condicional
+    if (edad >= 18) {
+        cout << nombre << ", eres mayor de edad" << endl;
+    } else {
+        cout << nombre << ", eres menor de edad" << endl;
+    }
+    return 0;
+}
