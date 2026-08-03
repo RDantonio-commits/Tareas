@@ -1,0 +1,25 @@
+/******************************************************************************
+Calculo de la edad en C++
+Fecha 02/08/2026
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    int num = 0;
+
+    while (num >= 0) {
+        printf("\nEscribe tu edad (o un numero negativo para salir):\n");
+        scanf("%d", &num);
+
+        // Validación de mayoría de edad
+        if (num >= 18) {
+            printf("Mayor de edad\n");
+        } 
+        else if (num >= 0) {
+            printf("Eres menor de edad\n");
+        }
+    }
+
+    printf("Programa finalizado.\n");
+    return 0;
+}
